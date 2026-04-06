@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manifiesto — EVOKA</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Outfit:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+  :root {
+    --bg-deep: #06060a;
+    --text-primary: #e8e8ef;
+    --text-secondary: #8888a0;
+    --text-muted: #55556a;
+    --accent-indigo: #818cf8;
+    --accent-sky: #38bdf8;
+    --gradient-text: linear-gradient(135deg, #818cf8 0%, #38bdf8 100%);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+  body {
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    line-height: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .manifesto {
+    max-width: 620px;
+    text-align: center;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 4rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+  }
+
+  .back-link:hover { color: var(--accent-indigo); }
+
+  .manifesto-line {
+    font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+    line-height: 1.9;
+    opacity: 0;
+    animation: line-in 0.6s ease both;
+  }
+
+  .manifesto-line.spacer {
+    height: 1.8rem;
+  }
+
+  .manifesto-line.highlight {
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+
+  .manifesto-line em {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-style: normal;
+  }
+
+  .signature {
+    margin-top: 4rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    opacity: 0;
+    animation: line-in 0.6s ease 4.5s both;
+  }
+
+  .signature span {
+    display: block;
+    margin-top: 0.3rem;
+    font-style: normal;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  @keyframes line-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .manifesto-line:nth-child(1) { animation-delay: 0.2s; }
+  .manifesto-line:nth-child(2) { animation-delay: 0.35s; }
+  .manifesto-line:nth-child(3) { animation-delay: 0.5s; }
+  .manifesto-line:nth-child(4) { animation-delay: 0.65s; }
+  .manifesto-line:nth-child(5) { animation-delay: 0.8s; }
+  .manifesto-line:nth-child(6) { animation-delay: 0.95s; }
+  .manifesto-line:nth-child(7) { animation-delay: 1.05s; }
+  .manifesto-line:nth-child(8) { animation-delay: 1.15s; }
+  .manifesto-line:nth-child(9) { animation-delay: 1.25s; }
+  .manifesto-line:nth-child(10) { animation-delay: 1.35s; }
+  .manifesto-line:nth-child(11) { animation-delay: 1.45s; }
+  .manifesto-line:nth-child(12) { animation-delay: 1.55s; }
+  .manifesto-line:nth-child(13) { animation-delay: 1.65s; }
+  .manifesto-line:nth-child(14) { animation-delay: 1.75s; }
+  .manifesto-line:nth-child(15) { animation-delay: 1.85s; }
+  .manifesto-line:nth-child(16) { animation-delay: 1.95s; }
+  .manifesto-line:nth-child(17) { animation-delay: 2.05s; }
+  .manifesto-line:nth-child(18) { animation-delay: 2.15s; }
+  .manifesto-line:nth-child(19) { animation-delay: 2.25s; }
+  .manifesto-line:nth-child(20) { animation-delay: 2.35s; }
+  .manifesto-line:nth-child(21) { animation-delay: 2.45s; }
+  .manifesto-line:nth-child(22) { animation-delay: 2.55s; }
+  .manifesto-line:nth-child(23) { animation-delay: 2.65s; }
+  .manifesto-line:nth-child(24) { animation-delay: 2.75s; }
+  .manifesto-line:nth-child(25) { animation-delay: 2.85s; }
+  .manifesto-line:nth-child(26) { animation-delay: 2.95s; }
+  .manifesto-line:nth-child(27) { animation-delay: 3.05s; }
+  .manifesto-line:nth-child(28) { animation-delay: 3.15s; }
+  .manifesto-line:nth-child(29) { animation-delay: 3.25s; }
+  .manifesto-line:nth-child(30) { animation-delay: 3.35s; }
+  .manifesto-line:nth-child(31) { animation-delay: 3.45s; }
+  .manifesto-line:nth-child(32) { animation-delay: 3.55s; }
+  .manifesto-line:nth-child(33) { animation-delay: 3.65s; }
+  .manifesto-line:nth-child(34) { animation-delay: 3.75s; }
+  .manifesto-line:nth-child(35) { animation-delay: 3.85s; }
+  .manifesto-line:nth-child(36) { animation-delay: 3.95s; }
+  .manifesto-line:nth-child(37) { animation-delay: 4.05s; }
+  .manifesto-line:nth-child(38) { animation-delay: 4.15s; }
+  .manifesto-line:nth-child(39) { animation-delay: 4.25s; }
+  .manifesto-line:nth-child(40) { animation-delay: 4.35s; }
+</style>
+</head>
+<body>
+
+<div class="manifesto">
+  <a href="evoka-landing.html" class="back-link">← Volver a EVOKA</a>
+
+  <p class="manifesto-line">La sonrisa de una madre mientras te lleva a la escuela.</p>
+  <p class="manifesto-line">El esfuerzo de un padre mientras trabaja pensando en ti.</p>
+  <p class="manifesto-line">Los abrazos de una graduación.</p>
+  <p class="manifesto-line">La pérdida de un ser querido.</p>
+  <p class="manifesto-line">El consejo eterno de un abuelo.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line">El primer día de vida de un ser humano.</p>
+  <p class="manifesto-line">La pérdida de una mascota.</p>
+  <p class="manifesto-line">El inicio de un proyecto.</p>
+  <p class="manifesto-line">El primer día después de un quiebre amoroso.</p>
+  <p class="manifesto-line">Los pasos de un niño camino a su primer día de clases.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line highlight">Todo eso merece conservarse en un lugar que valora esos momentos</p>
+  <p class="manifesto-line highlight">como lo que realmente son: las historias de <em>tu vida.</em></p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line">Evoka es eso.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line">Fue diseñado con una sola premisa:</p>
+  <p class="manifesto-line highlight"><em>obsesionarnos con la memoria humana.</em></p>
+  <p class="manifesto-line">Con la herencia. Con las historias. Con los legados.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line">Es una carta al futuro, para cuando no sea tan fácil recordarlo todo.</p>
+  <p class="manifesto-line highlight">Es la cápsula de tiempo que te ayuda a ser más humano.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line">Hace 17 años me obsesioné con esto.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line">Antes de que nacieran mis hijos.</p>
+  <p class="manifesto-line">Antes de que empezara todo lo que hoy existe.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line">Había un Felipe de 41 años mirando a ese joven de 24</p>
+  <p class="manifesto-line">que se enamoró de los recuerdos en fotos familiares</p>
+  <p class="manifesto-line">y quiso contar su historia.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line highlight">No una historia perfecta.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line">La misma que hubiese querido leer de mis abuelos</p>
+  <p class="manifesto-line">y de aquellos que ya no están.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line">Bienvenidos al espacio donde tu contenido vale.</p>
+  <p class="manifesto-line">Donde tu agotamiento se entiende.</p>
+  <p class="manifesto-line">Donde puedes tener un poquito de respiro</p>
+  <p class="manifesto-line">en una sociedad convulsionada.</p>
+  <p class="manifesto-line spacer"></p>
+  <p class="manifesto-line highlight">Bienvenidos a <em>Evoka.</em></p>
+
+  <p class="signature">Felipe Arriarán M.<span>Fundador, EVOKA</span></p>
+</div>
+
+</body>
+</html>
