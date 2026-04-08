@@ -6,7 +6,7 @@
 <title>EVOKA — Tu Legado Digital</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Outfit:wght@300;400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-
+ 
   :root {
     --bg-deep: #06060a;
     --bg-card: #0d0d14;
@@ -26,14 +26,14 @@
     --font-display: 'Outfit', sans-serif;
     --font-serif: 'Libre Baskerville', Georgia, serif;
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
   }
-
+ 
   body {
     background: var(--bg-deep);
     color: var(--text-primary);
@@ -41,7 +41,7 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
-
+ 
   /* ── Noise overlay ── */
   body::before {
     content: '';
@@ -51,7 +51,7 @@
     pointer-events: none;
     z-index: 1000;
   }
-
+ 
   /* ── Nav ── */
   nav {
     position: fixed;
@@ -65,7 +65,7 @@
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255,255,255,0.04);
   }
-
+ 
   .logo {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
@@ -76,7 +76,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-
+ 
   .nav-cta {
     padding: 0.6rem 1.8rem;
     border-radius: 100px;
@@ -90,12 +90,12 @@
     border: none;
     cursor: pointer;
   }
-
+ 
   .nav-cta:hover {
     transform: translateY(-1px);
     box-shadow: 0 8px 30px rgba(129, 140, 248, 0.3);
   }
-
+ 
   /* ── Sections ── */
   section {
     position: relative;
@@ -103,7 +103,7 @@
     max-width: 1100px;
     margin: 0 auto;
   }
-
+ 
   /* ── Hero ── */
   .hero {
     min-height: 100vh;
@@ -114,7 +114,7 @@
     text-align: center;
     padding-top: 6rem;
   }
-
+ 
   .hero-orb {
     width: 200px;
     height: 200px;
@@ -128,12 +128,12 @@
     animation: orb-float 8s ease-in-out infinite;
     pointer-events: none;
   }
-
+ 
   @keyframes orb-float {
     0%, 100% { transform: translateX(-50%) translateY(0) scale(1); }
     50% { transform: translateX(-50%) translateY(-30px) scale(1.1); }
   }
-
+ 
   .hero-badge {
     display: inline-block;
     padding: 0.4rem 1.2rem;
@@ -147,7 +147,7 @@
     margin-bottom: 2.5rem;
     animation: fade-up 0.8s ease both;
   }
-
+ 
   .hero h1 {
     font-family: var(--font-serif);
     font-size: clamp(2.2rem, 5vw, 3.8rem);
@@ -157,7 +157,7 @@
     color: var(--text-primary);
     animation: fade-up 0.8s ease 0.15s both;
   }
-
+ 
   .hero h1 em {
     font-style: italic;
     background: var(--gradient-text);
@@ -165,7 +165,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-
+ 
   .hero-sub {
     font-size: 1.15rem;
     color: var(--text-secondary);
@@ -174,7 +174,7 @@
     line-height: 1.8;
     animation: fade-up 0.8s ease 0.3s both;
   }
-
+ 
   .hero-cta-group {
     display: flex;
     gap: 1rem;
@@ -183,7 +183,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
+ 
   .btn-primary {
     padding: 1rem 2.5rem;
     border-radius: 100px;
@@ -197,12 +197,12 @@
     border: none;
     cursor: pointer;
   }
-
+ 
   .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 40px rgba(129, 140, 248, 0.35);
   }
-
+ 
   .btn-ghost {
     padding: 1rem 2.5rem;
     border-radius: 100px;
@@ -215,23 +215,23 @@
     transition: all 0.3s ease;
     cursor: pointer;
   }
-
+ 
   .btn-ghost:hover {
     border-color: rgba(129, 140, 248, 0.4);
     color: var(--text-primary);
   }
-
+ 
   @keyframes fade-up {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   /* ── Disruption section (Zuckerberg quote) ── */
   .disruption {
     text-align: center;
     padding: 6rem 2rem 8rem;
   }
-
+ 
   .disruption-quote {
     font-family: var(--font-serif);
     font-size: clamp(1.3rem, 3vw, 1.9rem);
@@ -242,7 +242,7 @@
     line-height: 1.7;
     position: relative;
   }
-
+ 
   .disruption-quote::before {
     content: '"';
     font-size: 6rem;
@@ -257,14 +257,14 @@
     font-family: var(--font-serif);
     line-height: 1;
   }
-
+ 
   .disruption-attribution {
     color: var(--text-muted);
     font-size: 0.85rem;
     margin-top: 1.5rem;
     letter-spacing: 0.05em;
   }
-
+ 
   .disruption-response {
     margin-top: 4rem;
     font-size: clamp(1.1rem, 2.5vw, 1.5rem);
@@ -275,7 +275,7 @@
     margin-right: auto;
     line-height: 1.8;
   }
-
+ 
   .disruption-response strong {
     background: var(--gradient-text);
     -webkit-background-clip: text;
@@ -283,7 +283,7 @@
     background-clip: text;
     font-weight: 600;
   }
-
+ 
   /* ── Contrast section ── */
   .contrast {
     display: grid;
@@ -293,7 +293,7 @@
     max-width: 900px;
     margin: 0 auto;
   }
-
+ 
   .contrast-card {
     padding: 2.5rem;
     border-radius: 20px;
@@ -301,18 +301,18 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .contrast-card.them {
     background: linear-gradient(145deg, rgba(255, 80, 80, 0.04), rgba(6, 6, 10, 0.8));
     border-color: rgba(255, 80, 80, 0.1);
   }
-
+ 
   .contrast-card.us {
     background: linear-gradient(145deg, rgba(129, 140, 248, 0.06), rgba(6, 6, 10, 0.8));
     border-color: rgba(129, 140, 248, 0.15);
     box-shadow: var(--glow-indigo);
   }
-
+ 
   .contrast-label {
     font-size: 0.7rem;
     letter-spacing: 0.2em;
@@ -320,10 +320,10 @@
     margin-bottom: 1.5rem;
     font-weight: 600;
   }
-
+ 
   .contrast-card.them .contrast-label { color: #ff6b6b; }
   .contrast-card.us .contrast-label { color: var(--accent-indigo); }
-
+ 
   .contrast-card h3 {
     font-family: var(--font-serif);
     font-size: 1.3rem;
@@ -331,19 +331,19 @@
     margin-bottom: 1rem;
     line-height: 1.4;
   }
-
+ 
   .contrast-card p {
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.7;
   }
-
+ 
   /* ── Manifesto lines ── */
   .manifesto {
     text-align: center;
     padding: 6rem 2rem;
   }
-
+ 
   .manifesto-line {
     font-family: var(--font-serif);
     font-size: clamp(1.2rem, 3vw, 1.8rem);
@@ -352,12 +352,12 @@
     line-height: 1.6;
     transition: color 0.6s ease;
   }
-
+ 
   .manifesto-line.highlight {
     color: var(--text-primary);
     font-weight: 700;
   }
-
+ 
   .manifesto-line em {
     background: var(--gradient-text);
     -webkit-background-clip: text;
@@ -365,7 +365,7 @@
     background-clip: text;
     font-style: normal;
   }
-
+ 
   .manifesto-signature {
     margin-top: 3rem;
     font-family: var(--font-serif);
@@ -373,7 +373,7 @@
     color: var(--text-secondary);
     font-size: 1rem;
   }
-
+ 
   .manifesto-signature span {
     display: block;
     margin-top: 0.3rem;
@@ -383,27 +383,27 @@
     color: var(--text-muted);
     letter-spacing: 0.05em;
   }
-
+ 
   /* ── Features ── */
   .features-header {
     text-align: center;
     margin-bottom: 4rem;
   }
-
+ 
   .features-header h2 {
     font-family: var(--font-serif);
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     font-weight: 400;
     margin-bottom: 1rem;
   }
-
+ 
   .features-header p {
     color: var(--text-secondary);
     font-size: 1.05rem;
     max-width: 500px;
     margin: 0 auto;
   }
-
+ 
   .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -411,7 +411,7 @@
     max-width: 1000px;
     margin: 0 auto;
   }
-
+ 
   .feature-card {
     padding: 2.2rem;
     border-radius: 16px;
@@ -419,13 +419,13 @@
     border: 1px solid rgba(255,255,255,0.05);
     transition: all 0.4s ease;
   }
-
+ 
   .feature-card:hover {
     background: var(--bg-card-hover);
     border-color: rgba(129, 140, 248, 0.15);
     transform: translateY(-3px);
   }
-
+ 
   .feature-icon {
     width: 44px;
     height: 44px;
@@ -436,19 +436,19 @@
     margin-bottom: 1.2rem;
     font-size: 1.3rem;
   }
-
+ 
   .feature-card h3 {
     font-weight: 600;
     font-size: 1.05rem;
     margin-bottom: 0.6rem;
   }
-
+ 
   .feature-card p {
     color: var(--text-secondary);
     font-size: 0.9rem;
     line-height: 1.6;
   }
-
+ 
   .feature-card .free-badge {
     display: inline-block;
     margin-top: 0.8rem;
@@ -460,14 +460,14 @@
     font-weight: 600;
     letter-spacing: 0.05em;
   }
-
+ 
   .fi-memorias { background: rgba(129, 140, 248, 0.1); }
   .fi-prime { background: rgba(167, 139, 250, 0.1); }
   .fi-tina { background: rgba(244, 114, 182, 0.1); }
   .fi-entrelineas { background: rgba(56, 189, 248, 0.1); }
   .fi-esferas { background: rgba(253, 211, 77, 0.1); }
   .fi-social { background: rgba(81, 207, 102, 0.1); }
-
+ 
   /* ── TINA callout ── */
   .tina-callout {
     margin: 6rem auto;
@@ -479,7 +479,7 @@
     text-align: center;
     position: relative;
   }
-
+ 
   .tina-callout::before {
     content: '';
     position: absolute;
@@ -489,17 +489,17 @@
     z-index: -1;
     filter: blur(30px);
   }
-
+ 
   .tina-callout h3 {
     font-family: var(--font-serif);
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-
+ 
   .tina-callout h3 span {
     color: var(--accent-pink);
   }
-
+ 
   .tina-callout p {
     color: var(--text-secondary);
     font-size: 1rem;
@@ -507,7 +507,7 @@
     max-width: 520px;
     margin: 0 auto;
   }
-
+ 
   .tina-callout .free-forever {
     display: inline-block;
     margin-top: 1.5rem;
@@ -519,14 +519,14 @@
     font-size: 0.85rem;
     letter-spacing: 0.05em;
   }
-
+ 
   /* ── Final CTA ── */
   .final-cta {
     text-align: center;
     padding: 8rem 2rem;
     position: relative;
   }
-
+ 
   .final-cta::before {
     content: '';
     position: absolute;
@@ -539,7 +539,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
   }
-
+ 
   .final-cta h2 {
     font-family: var(--font-serif);
     font-size: clamp(1.8rem, 4vw, 2.8rem);
@@ -548,7 +548,7 @@
     line-height: 1.4;
     position: relative;
   }
-
+ 
   .final-cta p {
     color: var(--text-secondary);
     font-size: 1.1rem;
@@ -556,7 +556,7 @@
     margin: 0 auto 2.5rem;
     line-height: 1.7;
   }
-
+ 
   /* ── Footer ── */
   footer {
     text-align: center;
@@ -565,15 +565,15 @@
     color: var(--text-muted);
     font-size: 0.8rem;
   }
-
+ 
   footer a {
     color: var(--text-secondary);
     text-decoration: none;
     transition: color 0.3s;
   }
-
+ 
   footer a:hover { color: var(--accent-indigo); }
-
+ 
   /* ── Responsive ── */
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
@@ -582,17 +582,17 @@
     .hero { min-height: 90vh; }
     .disruption-quote::before { display: none; }
   }
-
+ 
   /* ── Scroll animations ── */
   @keyframes reveal-up {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   .reveal {
     animation: reveal-up 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
   }
-
+ 
   .reveal:nth-child(1) { animation-delay: 0.1s; }
   .reveal:nth-child(2) { animation-delay: 0.25s; }
   .reveal:nth-child(3) { animation-delay: 0.4s; }
@@ -604,25 +604,25 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- Nav -->
 <nav>
   <div class="logo">EVOKA</div>
-  <a href="https://tally.so/r/lbW80W" target="_blank" class="nav-cta">Acceso anticipado</a>
+  <a href="https://evoka-mvp.vercel.app" class="nav-cta">Ingresar a EVOKA</a>
 </nav>
-
+ 
 <!-- Hero -->
 <section class="hero">
   <div class="hero-orb"></div>
-  <div class="hero-badge">Beta privada · Plazas limitadas</div>
+  <div class="hero-badge">Si estás aquí es porque le importas mucho a alguien</div>
   <h1>Tus memorias no deberían competir<br>con un video de cocina<br>por tu <em>atención</em></h1>
   <p class="hero-sub">EVOKA es la plataforma donde la inteligencia artificial no reemplaza tus relaciones. Las preserva.</p>
   <div class="hero-cta-group">
-    <a href="https://tally.so/r/lbW80W" target="_blank" class="btn-primary">Solicitar acceso</a>
+    <a href="https://evoka-mvp.vercel.app" class="btn-primary">Ingresar a EVOKA</a>
     <a href="evoka-manifiesto.html" class="btn-ghost">Leer el manifiesto</a>
   </div>
 </section>
-
+ 
 <!-- Zuckerberg disruption -->
 <section class="disruption reveal">
   <div class="disruption-quote">
@@ -635,7 +635,7 @@
     <strong>EVOKA existe para lo que queda después.</strong>
   </p>
 </section>
-
+ 
 <!-- Contrast -->
 <div class="contrast reveal">
   <div class="contrast-card them">
@@ -649,48 +649,48 @@
     <p>Sin algoritmo. Sin desconocidos. Sin contenido generado para retenerte. Solo tu familia, tus personas, tus memorias — con IA que profundiza lo humano en vez de reemplazarlo.</p>
   </div>
 </div>
-
+ 
 <!-- Manifesto lives in its own page, linked from hero button -->
 <div id="manifiesto"></div>
-
+ 
 <!-- Features -->
 <section class="reveal">
   <div class="features-header">
     <h2>No es otra red social.<br>Es tu legado.</h2>
     <p>Cada herramienta existe para darle profundidad a lo que importa.</p>
   </div>
-
+ 
   <div class="features-grid">
     <div class="feature-card">
       <div class="feature-icon fi-memorias">✦</div>
       <h3>Memorias</h3>
       <p>Captura momentos con el peso emocional que merecen. No likes, no views — significado.</p>
     </div>
-
+ 
     <div class="feature-card">
       <div class="feature-icon fi-prime">◆</div>
       <h3>PRIME</h3>
       <p>Tu historiador emocional. Una IA que no genera contenido para competir por tu atención — analiza tus palabras para que entiendas lo que sientes.</p>
     </div>
-
+ 
     <div class="feature-card">
       <div class="feature-icon fi-esferas">◉</div>
       <h3>Esferas de Vida</h3>
       <p>Familia. Amor. Trabajo. Amistad. Nueve dimensiones para organizar tu historia sin que un algoritmo decida qué importa.</p>
     </div>
-
+ 
     <div class="feature-card">
       <div class="feature-icon fi-entrelineas">◈</div>
       <h3>Entre Líneas</h3>
       <p>Pega una conversación. Entiende lo que realmente se dijo. Patrones emocionales que no ves a simple vista.</p>
     </div>
-
+ 
     <div class="feature-card">
       <div class="feature-icon fi-social">◎</div>
       <h3>Feed sin algoritmo</h3>
       <p>Cronológico. Solo personas que conoces. Tus memorias no compiten con nadie.</p>
     </div>
-
+ 
     <div class="feature-card">
       <div class="feature-icon fi-tina">♡</div>
       <h3>TINA</h3>
@@ -699,21 +699,21 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- TINA callout -->
 <div class="tina-callout reveal">
   <h3>Sobre <span>TINA</span></h3>
   <p>TINA nació de la experiencia real de criar a un hijo neurodivergente. No es una feature — es un compromiso. Por eso es gratis en todos los planes, para siempre. Porque ningún padre debería pagar por sentirse acompañado.</p>
   <span class="free-forever">Gratis en todos los planes · Siempre</span>
 </div>
-
+ 
 <!-- Final CTA -->
 <section class="final-cta reveal" id="acceso">
   <h2>El momento que no capturas<br>es el que desaparece.</h2>
-  <p>EVOKA está en beta privada. Plazas limitadas para quienes entienden que sus memorias valen más que el contenido de un desconocido.</p>
-  <a href="/cdn-cgi/l/email-protection#b7d5d2c3d6f7d2c1d8dcd699d6c7c788c4c2d5ddd2d4c38ae6c2ded2c5d897d6d4d4d2c4d897d6d9c3ded4dec7d6d3d897d697f2e1f8fcf6" class="btn-primary">Solicitar acceso anticipado</a>
+  <p>EVOKA es gratuito. Entra, crea tu primera memoria, y descubre lo que la inteligencia artificial puede hacer por tus recuerdos.</p>
+  <a href="https://evoka-mvp.vercel.app" class="btn-primary">Comenzar ahora</a>
 </section>
-
+ 
 <!-- Footer -->
 <footer>
   <p>EVOKA · Viña del Mar, Chile · 2026</p>
