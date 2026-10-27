@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Política de privacidad de EVOKA: qué datos tratamos, para qué, con quién los compartimos y cómo puedes pedir verlos, corregirlos o borrarlos.">
+<meta property="og:title" content="Política de privacidad — EVOKA">
+<meta property="og:type" content="article">
+<title>Política de privacidad — EVOKA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #06060a;
+    color: #d4d4de;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+
+  .orb {
+    position: fixed;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(129,140,248,0.10), rgba(56,189,248,0.05), transparent 70%);
+    filter: blur(80px);
+    top: 4%; left: 50%; transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  main { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; padding: 56px 24px 40px; }
+
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 48px; gap: 16px; flex-wrap: wrap; }
+  .logo {
+    font-weight: 800; font-size: 1.1rem; letter-spacing: 0.18em; text-decoration: none;
+    background: linear-gradient(135deg, #818cf8, #38bdf8);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .back { color: #a1a1b5; text-decoration: none; font-size: 0.95rem; padding: 10px 0; }
+  .back:hover, .back:focus-visible { color: #c7cbff; }
+
+  h1 {
+    font-family: 'Playfair Display', serif; font-weight: 600;
+    font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.2; color: #f2f2f7; margin-bottom: 12px;
+  }
+  h1 em {
+    font-style: italic;
+    background: linear-gradient(135deg, #818cf8, #38bdf8);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .meta { color: #9a9ab0; font-size: 0.95rem; margin-bottom: 32px; }
+
+  .intro {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 18px; padding: 24px; margin-bottom: 40px;
+  }
+  .intro p + p { margin-top: 12px; }
+
+  h2 {
+    font-family: 'Playfair Display', serif; font-weight: 600; color: #f2f2f7;
+    font-size: 1.5rem; line-height: 1.3; margin: 48px 0 14px; scroll-margin-top: 24px;
+  }
+  h3 { color: #ececf3; font-size: 1.1rem; font-weight: 700; margin: 24px 0 8px; }
+  p { margin-bottom: 12px; }
+  ul { margin: 8px 0 16px 1.2em; }
+  li { margin-bottom: 8px; }
+  strong { color: #f2f2f7; }
+  a { color: #a5b4fc; text-underline-offset: 3px; }
+  a:hover, a:focus-visible { color: #c7d2fe; }
+
+  .toc { margin: 0 0 8px; }
+  .toc ol { margin-left: 1.3em; columns: 2; column-gap: 32px; }
+  .toc li { margin-bottom: 6px; break-inside: avoid; }
+
+  .table-wrap { overflow-x: auto; margin: 12px 0 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 10px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  th { color: #f2f2f7; font-weight: 700; }
+
+  .note {
+    border-left: 3px solid #38bdf8; padding: 4px 0 4px 16px; margin: 16px 0; color: #c9c9d6;
+  }
+
+  /* Datos que faltan completar antes de publicar */
+  .falta {
+    display: inline-block; padding: 0 8px; border-radius: 6px;
+    border: 1px dashed #fbbf24; background: rgba(251,191,36,0.12); color: #fde68a; font-weight: 700;
+  }
+
+  footer {
+    position: relative; z-index: 1; text-align: center; padding: 28px 24px 40px;
+    border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.9rem; color: #8a8aa0;
+  }
+  footer a { color: #a1a1b5; text-decoration: none; }
+  footer a:hover, footer a:focus-visible { color: #c7cbff; }
+
+  :focus-visible { outline: 2px solid #38bdf8; outline-offset: 3px; border-radius: 4px; }
+
+  @media (max-width: 560px) {
+    .toc ol { columns: 1; }
+    body { font-size: 16.5px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="orb" aria-hidden="true"></div>
+
+<main>
+  <div class="top">
+    <a href="index.html" class="logo" aria-label="EVOKA, volver al inicio">EVOKA</a>
+    <a href="index.html" class="back">← Volver a EVOKA</a>
+  </div>
+
+  <h1>Política de <em>privacidad</em></h1>
+  <p class="meta">Última actualización: 26 de octubre de 2026</p>
+
+  <div class="intro">
+    <p>En EVOKA guardas cosas que importan: recuerdos, personas que quieres, a veces dolor. Por eso queremos explicarte, sin letra chica, qué datos tratamos, para qué, con quién los compartimos y cómo puedes pedir verlos, corregirlos o borrarlos.</p>
+    <p><strong>Lo esencial:</strong> tus memorias son tuyas. No vendemos tus datos, no los usamos para publicidad y no compartimos nada con nadie sin que tú lo decidas, salvo con los proveedores técnicos que hacen funcionar EVOKA, que se nombran más abajo.</p>
+  </div>
+
+  <nav class="toc" aria-label="Contenido">
+    <ol>
+      <li><a href="#quienes">Quiénes somos</a></li>
+      <li><a href="#datos">Qué datos tratamos</a></li>
+      <li><a href="#para-que">Para qué los usamos</a></li>
+      <li><a href="#sensibles">Datos sensibles y de salud</a></li>
+      <li><a href="#tina">Niños, niñas y Tina</a></li>
+      <li><a href="#terceros">Datos de otras personas</a></li>
+      <li><a href="#proveedores">Con quién los compartimos</a></li>
+      <li><a href="#extranjero">Datos fuera de Chile</a></li>
+      <li><a href="#tu-dispositivo">Lo que queda en tu dispositivo</a></li>
+      <li><a href="#cuanto-tiempo">Cuánto tiempo los guardamos</a></li>
+      <li><a href="#borrar-cuenta">Cómo borrar tu cuenta</a></li>
+      <li><a href="#derechos">Tus derechos</a></li>
+      <li><a href="#seguridad">Seguridad</a></li>
+      <li><a href="#cambios">Cambios a esta política</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="quienes">1. Quiénes somos</h2>
+  <p>EVOKA es una aplicación para preservar memorias con ayuda de inteligencia artificial, creada en Viña del Mar, Chile. Funciona en la web y en su versión para Android.</p>
+  <p>El responsable de tus datos personales es:</p>
+  <ul>
+    <li><strong>Responsable:</strong> <span class="falta">[RESPONSABLE: nombre o razón social]</span></li>
+    <li><strong>RUT:</strong> <span class="falta">[RUT]</span></li>
+    <li><strong>Domicilio:</strong> <span class="falta">[DOMICILIO]</span></li>
+    <li><strong>Correo para temas de privacidad:</strong> <span class="falta">[CORREO DE CONTACTO]</span></li>
+  </ul>
+  <p>Esta política sigue la <a href="https://www.bcn.cl/leychile/navegar?idNorma=141599">Ley 19.628 sobre protección de la vida privada</a> y la <a href="https://www.bcn.cl/leychile/navegar?idNorma=1209272">Ley 21.719</a>, que la reforma y crea la Agencia de Protección de Datos Personales. La Ley 21.719 entra en vigencia el 1 de diciembre de 2026 (en el Congreso se discute postergarla a diciembre de 2027). Sea cual sea la fecha, en EVOKA ya trabajamos con sus estándares.</p>
+
+  <h2 id="datos">2. Qué datos tratamos</h2>
+  <h3>Lo que tú nos das</h3>
+  <ul>
+    <li><strong>Tu cuenta:</strong> nombre, correo y, si la subes, tu foto de perfil. Si entras con una cuenta de otro servicio (por ejemplo, Google), ese servicio nos entrega tu nombre, correo y foto.</li>
+    <li><strong>Tus memorias:</strong> lo que escribes (títulos, textos, fechas, esferas de vida), si cada memoria es privada o compartida, y las fotos, audios o videos que adjuntas.</li>
+    <li><strong>Tus conversaciones con VOKA:</strong> lo que le escribes o dictas y lo que te responde.</li>
+    <li><strong>Historia Familiar:</strong> las personas sobre las que escribes y los aportes de los familiares que invitas.</li>
+    <li><strong>Tina:</strong> el perfil del niño o niña que acompañas (nombre, año de nacimiento, género, su condición, por ejemplo autismo o síndrome de Down, y el nombre de quienes lo cuidan), tus notas y las cartas al futuro.</li>
+    <li><strong>Entre Líneas</strong> (cuando esté disponible): las conversaciones que decidas pegar para analizarlas y las personas que aparecen en ellas.</li>
+  </ul>
+  <h3>Lo que se genera al usar EVOKA</h3>
+  <ul>
+    <li><strong>Lo que VOKA aprende de ti:</strong> para acompañarte mejor, VOKA arma un resumen a partir de tus memorias y conversaciones: personas importantes, valores, miedos, lo que amas, tu forma de expresarte y patrones emocionales. Lo puedes pedir para verlo, corregirlo o borrarlo.</li>
+    <li><strong>Uso de la app:</strong> páginas que visitas, botones que tocas y acciones como crear o borrar una memoria (sin su contenido), asociado a tu cuenta, para entender qué funciona y qué no.</li>
+    <li><strong>Registros técnicos:</strong> cuánto usas la inteligencia artificial (para cuidar los límites del plan) y registros de seguridad y errores.</li>
+  </ul>
+  <h3>Lo que no tratamos</h3>
+  <ul>
+    <li>No accedemos a tu ubicación, tus contactos, tus SMS ni tus llamadas.</li>
+    <li>No guardamos datos de tarjetas: hoy EVOKA no cobra. Si algún día lo hace, te lo contaremos aquí antes.</li>
+    <li>No usamos identificadores publicitarios ni mostramos anuncios.</li>
+  </ul>
+  <h3>El dictado por voz</h3>
+  <p class="note">Cuando usas el botón para dictar, la voz no la procesa EVOKA: la transcribe el servicio de reconocimiento de voz de tu navegador. En Google Chrome, ese servicio es de Google, que recibe el audio para convertirlo en texto. EVOKA solo recibe el texto. Si prefieres que tu voz no salga de tu teléfono, puedes escribir en lugar de dictar.</p>
+
+  <h2 id="para-que">3. Para qué los usamos</h2>
+  <ul>
+    <li>Para que puedas crear tu cuenta, entrar y guardar tus memorias de forma segura.</li>
+    <li>Para que VOKA converse contigo, te ayude a recordar y ordene tu historia.</li>
+    <li>Para que funcionen Historia Familiar, Tina y lo que tú decidas compartir.</li>
+    <li>Para mejorar EVOKA, cuidar su seguridad y prevenir abusos.</li>
+    <li>Para responderte cuando nos escribes y avisarte de cambios importantes.</li>
+  </ul>
+  <p>Tratamos tus datos porque tú lo consientes al usar EVOKA (y de forma expresa para los datos sensibles) y porque son necesarios para darte el servicio. Puedes retirar tu consentimiento cuando quieras; lo que ya se hizo antes sigue siendo válido.</p>
+  <p><strong>Lo que nunca hacemos:</strong> vender tus datos, usarlos para publicidad o entrenar con tus memorias modelos de inteligencia artificial propios.</p>
+
+  <h2 id="sensibles">4. Datos sensibles y de salud</h2>
+  <p>Una memoria puede hablar de una enfermedad, de un duelo, de tu fe o de tu familia. Y en Tina hay datos de salud de un niño o niña. La ley los llama <strong>datos sensibles</strong> y les da una protección especial. Por eso:</p>
+  <ul>
+    <li>Solo los tratamos para lo que tú usas: guardar, ordenar y acompañarte.</li>
+    <li>Nunca los compartimos con nadie para otros fines.</li>
+    <li>Tus memorias nacen privadas. Solo se ven por otras personas si tú eliges compartirlas.</li>
+    <li>Si compartes una memoria con un enlace, cualquiera que tenga ese enlace podrá verla. Puedes dejar de compartirla cuando quieras.</li>
+  </ul>
+  <p>VOKA no reemplaza a un profesional de la salud. Si estás pasando por un momento muy difícil, en Chile puedes llamar a Salud Responde al 600 360 7777 o marcar *4141 desde un celular.</p>
+
+  <h2 id="tina">5. Niños, niñas y Tina</h2>
+  <p>Las cuentas de EVOKA son para personas adultas. Niños, niñas y adolescentes no crean cuentas ni usan la app por sí mismos.</p>
+  <p>Tina existe para familias que crían a un hijo o hija neurodivergente. Ahí, un adulto escribe sobre ese niño o niña. Al crear su perfil, declaras que eres su madre, padre, representante legal o quien tiene su cuidado personal, y das el consentimiento que la ley pide para tratar sus datos. Los tratamos siempre pensando en su interés superior y con el máximo cuidado:</p>
+  <ul>
+    <li>Solo los ves tú.</li>
+    <li>No se usan para nada que no sea Tina.</li>
+    <li>Puedes pedir verlos, corregirlos o borrarlos cuando quieras.</li>
+  </ul>
+
+  <h2 id="terceros">6. Datos de otras personas</h2>
+  <p>Recordar es recordar a otros. En tus memorias, en Historia Familiar y en Entre Líneas aparecen personas que no usan EVOKA.</p>
+  <ul>
+    <li>Escribe sobre ellas con el mismo respeto con que te gustaría que escribieran sobre ti, y comparte solo lo que tengas derecho a compartir.</li>
+    <li>Cuando invitas a un familiar a Historia Familiar, se crea un enlace de invitación que vence. Quien lo acepta puede ver y sumar aportes a esa historia.</li>
+    <li>Si alguien cree que en EVOKA hay datos suyos que no deberían estar, puede escribirnos a <span class="falta">[CORREO DE CONTACTO]</span> y lo revisaremos.</li>
+    <li>Cuando una persona fallece, la ley permite que sus herederos ejerzan sus derechos sobre sus datos, salvo que ella lo haya prohibido.</li>
+  </ul>
+
+  <h2 id="proveedores">7. Con quién los compartimos</h2>
+  <p>Para funcionar, EVOKA usa proveedores técnicos. Solo reciben lo necesario para su tarea, tratan los datos por encargo nuestro y no pueden usarlos para fines propios.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Proveedor</th><th>Para qué</th><th>Qué datos</th></tr></thead>
+      <tbody>
+        <tr><td>Clerk</td><td>Crear tu cuenta y entrar de forma segura</td><td>Nombre, correo, foto, datos de inicio de sesión</td></tr>
+        <tr><td>Neon (PostgreSQL)</td><td>Base de datos donde se guarda EVOKA</td><td>Memorias, conversaciones, Historia Familiar, Tina y datos de cuenta</td></tr>
+        <tr><td>Cloudinary</td><td>Guardar y mostrar tus archivos</td><td>Fotos, audios y videos que subes</td></tr>
+        <tr><td>Anthropic</td><td>La inteligencia artificial de VOKA</td><td>Los textos que VOKA necesita leer para responderte</td></tr>
+        <tr><td>OpenAI</td><td>Algunas funciones de inteligencia artificial, como encontrar memorias relacionadas</td><td>Textos de memorias y mensajes, solo para procesarlos</td></tr>
+        <tr><td>Render</td><td>El servidor que hace funcionar EVOKA</td><td>Los datos que pasan por la app mientras la usas</td></tr>
+        <tr><td>Vercel</td><td>Publicar la web de EVOKA</td><td>Datos técnicos de la conexión, como la dirección IP</td></tr>
+        <tr><td>PostHog</td><td>Entender cómo se usa la app</td><td>Páginas, toques y acciones, asociados a tu cuenta, correo y nombre</td></tr>
+        <tr><td>Google</td><td>Tipografías de la web y, en Chrome, el dictado por voz</td><td>Dirección IP; el audio cuando dictas</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>También podríamos entregar datos si una autoridad lo exige conforme a la ley, o si EVOKA se fusiona o cambia de dueño. En ese caso te avisaremos antes y esta política te seguirá protegiendo.</p>
+
+  <h2 id="extranjero">8. Datos fuera de Chile</h2>
+  <p>La mayoría de estos proveedores tiene sus servidores fuera de Chile, principalmente en Estados Unidos. Eso significa que tus datos viajan y se guardan allá. Elegimos proveedores que se comprometen por contrato a proteger los datos con medidas de seguridad adecuadas, y hacemos estas transferencias como lo pide la ley chilena. Al usar EVOKA, consientes en estas transferencias.</p>
+
+  <h2 id="tu-dispositivo">9. Lo que queda en tu dispositivo</h2>
+  <p>EVOKA guarda algunas cosas pequeñas en tu propio navegador (almacenamiento local), no en nuestros servidores: si prefieres el modo día o noche, el borrador de lo que le estabas escribiendo a VOKA, tus búsquedas recientes, tus preferencias de avisos, si ya viste la bienvenida y, si llegaste por una invitación, el código de esa invitación. Puedes borrarlas cuando quieras desde la configuración de tu navegador. La herramienta de uso (PostHog) también guarda un identificador en tu navegador.</p>
+
+  <h2 id="cuanto-tiempo">10. Cuánto tiempo los guardamos</h2>
+  <ul>
+    <li>Tus memorias y todo lo que creas en EVOKA se guardan mientras tengas tu cuenta. Preservar es justamente para lo que existe EVOKA.</li>
+    <li>Si borras una memoria o una conversación, deja de verse de inmediato.</li>
+    <li>Si borras tu cuenta, borramos todos los datos asociados a ella (ver el punto 11).</li>
+    <li>Solo guardaremos algo por más tiempo si la ley nos obliga, y te diremos qué y por qué.</li>
+  </ul>
+
+  <h2 id="borrar-cuenta">11. Cómo borrar tu cuenta</h2>
+  <p>Puedes pedir que borremos tu cuenta y todos tus datos cuando quieras, sin dar explicaciones y sin costo.</p>
+  <ul>
+    <li><strong>Cómo:</strong> escríbenos a <span class="falta">[CORREO DE CONTACTO]</span> desde el correo de tu cuenta, con el asunto «Borrar mi cuenta». Pronto también podrás hacerlo directamente desde la app, en Tu cuenta.</li>
+    <li><strong>Qué se borra:</strong> tu cuenta, tus memorias y sus archivos, tus conversaciones con VOKA y lo que VOKA aprendió de ti, Historia Familiar, Tina y todo lo demás asociado a tu cuenta. No es una desactivación: se borra.</li>
+    <li><strong>Cuándo:</strong> te confirmamos la recepción y lo hacemos dentro de 30 días corridos.</li>
+    <li><strong>Copias de seguridad:</strong> por un tiempo limitado pueden quedar en las copias de seguridad automáticas de nuestros proveedores, que se borran solas en su ciclo normal y nunca se usan para nada más.</li>
+  </ul>
+  <p>Antes de borrar, si quieres, te entregamos una copia de tus memorias (ver «portabilidad» más abajo).</p>
+
+  <h2 id="derechos">12. Tus derechos</h2>
+  <p>La ley te da derechos sobre tus datos. Son tuyos, son gratis y nadie te los puede quitar:</p>
+  <ul>
+    <li><strong>Acceso:</strong> saber qué datos tuyos tenemos y para qué.</li>
+    <li><strong>Rectificación:</strong> corregir los que estén mal o incompletos.</li>
+    <li><strong>Supresión:</strong> pedir que los borremos.</li>
+    <li><strong>Oposición:</strong> pedir que dejemos de usarlos para algo en particular, por ejemplo para medir el uso de la app.</li>
+    <li><strong>Portabilidad:</strong> recibir una copia de tus datos en un formato electrónico que puedas abrir y llevar a otro lugar.</li>
+    <li><strong>Bloqueo:</strong> pedir que suspendamos temporalmente su uso mientras se revisa algo.</li>
+  </ul>
+  <p>Para ejercerlos, escríbenos a <span class="falta">[CORREO DE CONTACTO]</span>. Te responderemos dentro de 30 días corridos (si necesitamos más tiempo, te avisaremos y nunca serán más de otros 30). Si no quedas conforme con nuestra respuesta, puedes reclamar ante la Agencia de Protección de Datos Personales.</p>
+
+  <h2 id="seguridad">13. Seguridad</h2>
+  <ul>
+    <li>Todo viaja cifrado entre tu dispositivo y nuestros servidores (HTTPS).</li>
+    <li>Cada cuenta solo puede ver lo suyo y lo que otras personas eligieron compartir con ella.</li>
+    <li>Las claves de nuestros sistemas se guardan protegidas y el acceso interno a los datos es mínimo y solo para resolver problemas.</li>
+    <li>Si ocurre un incidente de seguridad que afecte tus datos, te avisaremos y avisaremos a la autoridad, como lo pide la ley.</li>
+  </ul>
+  <p>Ningún sistema es perfecto, pero cuidamos tus memorias como si fueran las nuestras.</p>
+
+  <h2 id="cambios">14. Cambios a esta política</h2>
+  <p>Si cambiamos esta política, actualizaremos la fecha de arriba. Si el cambio es importante, por ejemplo un nuevo proveedor o un nuevo uso de tus datos, te avisaremos en la app o por correo antes de que empiece a regir y, cuando corresponda, te pediremos de nuevo tu consentimiento.</p>
+
+  <h2 id="contacto">15. Contacto</h2>
+  <p>¿Dudas, miedos o algo que no se entiende? Escríbenos a <span class="falta">[CORREO DE CONTACTO]</span> o a <span class="falta">[DOMICILIO]</span>. Te responde una persona.</p>
+</main>
+
+<footer>
+  <p>EVOKA · Viña del Mar, Chile · 2026</p>
+  <p style="margin-top: 6px;">
+    <a href="index.html">Inicio</a> · <a href="evoka-manifiesto.html">Manifiesto</a> · <a href="privacidad.html" aria-current="page">Privacidad</a>
+  </p>
+</footer>
+</body>
+</html>
