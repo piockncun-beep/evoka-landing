@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cómo borrar tu cuenta de EVOKA y todos tus datos: pasos, qué se borra y qué queda por un tiempo.">
+<meta property="og:title" content="Borrar tu cuenta — EVOKA">
+<title>Borrar tu cuenta — EVOKA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f5eee3;--bg2:radial-gradient(90% 55% at 50% 0%,#fffaf2 0%,#f5eee3 62%,#efe6d8 100%);--ink:#231d18;--soft:#5e554c;--mute:#6b6157;--accent:#9a5b2e;--card:rgba(255,255,255,.80);--cardb:rgba(60,40,20,.10);--line:rgba(60,40,20,.12);--sage:#5d7a5a;--sagebg:rgba(93,122,90,.10);--btn:#231d18;--btnink:#fdf8f1}
+  @media (prefers-color-scheme: dark){:root{--bg:#0d0e13;--bg2:radial-gradient(90% 55% at 50% 0%,#1b1f2c 0%,#0d0e13 62%,#0a0a0d 100%);--ink:#f3efe8;--soft:#c4beb5;--mute:#9a958e;--accent:#e9c79a;--card:rgba(255,255,255,.045);--cardb:rgba(255,255,255,.09);--line:rgba(255,255,255,.10);--sage:#a9c2a6;--sagebg:rgba(169,194,166,.10);--btn:#f3efe8;--btnink:#17151c}}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',sans-serif;background:var(--bg2);background-color:var(--bg);background-repeat:no-repeat;color:var(--ink);-webkit-font-smoothing:antialiased;font-size:17px;line-height:1.55;min-height:100vh}
+  .wrap{max-width:1120px;margin:0 auto;padding:40px 48px 64px}
+  header{display:flex;justify-content:space-between;align-items:center;min-height:44px}
+  .logo{display:inline-flex;align-items:center;min-height:44px;font-family:'Fraunces',serif;font-size:22px;letter-spacing:.22em;font-weight:500;color:var(--ink);text-decoration:none}
+  .back{color:var(--soft);font-weight:700;font-size:16px;padding:12px 0;text-decoration:none}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:700;margin-top:48px}
+  h1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(34px,5vw,52px);line-height:1.12;letter-spacing:-.5px;margin-top:8px}
+  h1 em{font-family:'Fraunces',serif;font-style:italic;color:var(--accent)}
+  .lead{color:var(--soft);font-size:19px;margin-top:14px;max-width:640px}
+  h2{font-family:'Fraunces',serif;font-weight:500;font-size:26px;margin:36px 0 12px}
+  .card{background:var(--card);border:1px solid var(--cardb);border-radius:22px;padding:24px 28px}
+  .card h3{font-size:17px;font-weight:700}
+  .card p{color:var(--soft);font-size:16px;margin-top:6px}
+  ol.steps{list-style:none}
+  ol.steps li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+  ol.steps li:last-child{border:none}
+  .n{flex:none;width:34px;height:34px;border-radius:17px;border:1.5px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:18px}
+  ol.steps b{display:block} ol.steps span{color:var(--soft);font-size:16px}
+  .tag{display:inline-block;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--sage);background:var(--sagebg);border-radius:12px;padding:2px 10px;margin-left:8px;vertical-align:middle;font-family:'Nunito',sans-serif}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  ul.dots{list-style:none;margin-top:4px}
+  ul.dots li{padding:8px 0 8px 24px;position:relative;font-size:16px;color:var(--soft)}
+  ul.dots li b{color:var(--ink)}
+  ul.dots li:before{content:'';position:absolute;left:4px;top:17px;width:8px;height:8px;border-radius:4px;background:var(--accent)}
+  .keep ul.dots li:before{background:var(--sage)}
+  .btn{display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:26px;background:var(--btn);color:var(--btnink);font-weight:800;font-size:17px;padding:0 28px;margin-top:16px;text-decoration:none}
+  .note{background:var(--sagebg);border-radius:18px;padding:14px 16px;font-size:16px;color:var(--soft);margin-top:16px}
+  .note b{color:var(--ink)}
+  .note a,footer a{color:inherit;text-underline-offset:3px}
+  .note a{display:inline-block;padding:11px 0;margin:-11px 0}
+  .grid2{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:start}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--mute);font-size:16px}
+  footer a{display:inline-block;padding:12px 0;min-height:44px}
+  @media (max-width:800px){
+    .wrap{padding:20px 20px 40px}
+    .eyebrow{margin-top:28px}
+    .lead{font-size:17px}
+    h2{font-size:23px;margin-top:30px}
+    .card{padding:18px}
+    .cols,.grid2{grid-template-columns:1fr;gap:16px}
+    .grid2{gap:0}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="index.html">EVOKA</a>
+    <a class="back" href="index.html">Volver al inicio</a>
+  </header>
+
+  <p class="eyebrow">Tu cuenta</p>
+  <h1>Borrar tu cuenta <em>de EVOKA</em></h1>
+  <p class="lead">Puedes irte cuando quieras, sin explicar nada y sin costo. Así se hace, y esto es lo que pasa con tus recuerdos.</p>
+
+  <div class="grid2">
+    <section>
+      <h2>Por correo</h2>
+      <div class="card">
+        <ol class="steps">
+          <li><div class="n">1</div><div><b>Escríbenos desde el correo de tu cuenta</b><span>A evokappcl@gmail.com, con el asunto «Borrar mi cuenta». No necesitas explicar nada.</span></div></li>
+          <li><div class="n">2</div><div><b>Te confirmamos que lo recibimos</b><span>Y si quieres, antes te enviamos una copia de tus memorias.</span></div></li>
+          <li><div class="n">3</div><div><b>Borramos todo dentro de 30 días</b><span>Si te arrepientes antes, avísanos y no borramos nada.</span></div></li>
+        </ol>
+        <a class="btn" href="mailto:evokappcl@gmail.com?subject=Borrar%20mi%20cuenta">Escribirnos un correo</a>
+      </div>
+    </section>
+    <section>
+      <h2>Desde la app <span class="tag">Muy pronto</span></h2>
+      <div class="card">
+        <ol class="steps">
+          <li><div class="n">1</div><div><b>Abre EVOKA y toca tu foto</b><span>Se abre Tu cuenta.</span></div></li>
+          <li><div class="n">2</div><div><b>Elige «Borrar mi cuenta»</b><span>Puedes descargar tus memorias antes.</span></div></li>
+          <li><div class="n">3</div><div><b>Confirma</b><span>Tienes 30 días para arrepentirte.</span></div></li>
+        </ol>
+      </div>
+    </section>
+  </div>
+
+  <h2>Qué pasa con tus datos</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>Lo que se borra</h3>
+      <ul class="dots">
+        <li><b>Tu cuenta</b> y tu correo de acceso</li>
+        <li><b>Tus memorias</b> y sus fotos, audios y videos</li>
+        <li>Tus conversaciones con <b>VOKA</b> y lo que aprendió de ti</li>
+        <li><b>Historia Familiar</b>, <b>Tina</b> y todo lo demás asociado a tu cuenta</li>
+      </ul>
+      <p>No es una desactivación: se borra.</p>
+    </div>
+    <div class="card keep">
+      <h3>Lo que queda un tiempo</h3>
+      <ul class="dots">
+        <li><b>Hasta 30 días</b> mientras hacemos el borrado: en ese plazo puedes arrepentirte</li>
+        <li><b>Copias de seguridad</b> de nuestros proveedores: se borran solas en su ciclo normal y nunca se usan para nada más</li>
+        <li>Solo guardaríamos algo más si la ley nos obliga, y te diríamos qué y por qué</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">¿Quieres saber más? Todo está en nuestra <a href="privacidad.html#borrar-cuenta">política de privacidad</a>.</p>
+
+  <footer>
+    EVOKA CHILE SpA · RUT 78.312.195-6 · Viña del Mar, Chile · evokappcl@gmail.com<br>
+    <a href="index.html">Inicio</a> · <a href="privacidad.html">Privacidad</a> · <a href="borrar-cuenta.html" aria-current="page">Borrar tu cuenta</a>
+  </footer>
+</div>
+</body>
+</html>
